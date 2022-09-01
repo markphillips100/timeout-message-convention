@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NServiceBus" Version="7.*" />
+	</ItemGroup>
+	<ItemGroup>
+    <ProjectReference Include="..\SampleDomain.Messages.Events\SampleDomain.Messages.Events.csproj" />
+    <ProjectReference Include="..\SampleDomain.Messages\SampleDomain.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
