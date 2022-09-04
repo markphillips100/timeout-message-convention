@@ -10,7 +10,6 @@
 		<PackageReference Include="NServiceBus" Version="7.*" />
 	</ItemGroup>
 	<ItemGroup>
-    <ProjectReference Include="..\SampleDomain.Messages.Events\SampleDomain.Messages.Events.csproj" />
     <ProjectReference Include="..\SampleDomain.Messages\SampleDomain.Messages.csproj" />
   </ItemGroup>
 

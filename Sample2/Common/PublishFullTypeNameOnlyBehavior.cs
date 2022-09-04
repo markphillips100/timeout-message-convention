@@ -10,10 +10,10 @@ namespace Common
         public Task Invoke(IOutgoingPhysicalMessageContext context, Func<IOutgoingPhysicalMessageContext, Task> next)
         {
             var messageIntent = context.Headers[Headers.MessageIntent];
-            if (messageIntent == "Publish")
-            {
-                return next(context);
-            }
+            //if (messageIntent != "Publish")
+            //{
+            //    return next(context);
+            //}
 
             var types = context.Headers[Headers.EnclosedMessageTypes];
 

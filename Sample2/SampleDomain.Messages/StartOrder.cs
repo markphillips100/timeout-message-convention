@@ -1,6 +1,6 @@
 using System;
 
-namespace Messages;
+namespace SampleDomain.Messages;
 
 public class StartOrder
 {

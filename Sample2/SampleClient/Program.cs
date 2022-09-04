@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Common;
-using Messages;
 using NServiceBus;
 using NServiceBus.Logging;
+using SampleDomain.Messages;
 
 class Program
 {

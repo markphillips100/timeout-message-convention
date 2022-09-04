@@ -11,9 +11,7 @@ namespace Common
 
             config.Conventions()
                 .DefiningMessagesAs(t =>
-                    t.Namespace?.EndsWith("Messages") == true ||
-                    t.Namespace?.EndsWith("Messages.EVents") == true)
-                .DefiningEventsAs(t => t.Namespace?.EndsWith("Messages.Events") == true);
+                    t.Namespace?.EndsWith(".Messages") == true);
 
             config.UseSerialization<NewtonsoftSerializer>();
 
